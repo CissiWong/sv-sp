@@ -1,5 +1,6 @@
 import React from "react"
-import ItemPreview from "../components/itempreview.js"
+import Preview from "../components/preview.js"
+
 
 export default class ListView extends React.Component {
   constructor(props) {
@@ -24,9 +25,11 @@ export default class ListView extends React.Component {
     return (
       <div>
         {this.state.associations.map(item => {
-          return <ItemPreview
+          return <Preview
+            key={item.id}
             name={item.shortname}
-            location={item.location.city}/>
+            location={item.location.city}
+            sport={item.subcategory}/>
         })}
       </div>
     )
