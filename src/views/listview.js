@@ -30,7 +30,6 @@ export default class ListView extends React.Component {
               sport={item.subcategory}
               supporters={item.supporters}
               point={item.points}
-              data={this.state.listings}
             />
         })}
       </div>

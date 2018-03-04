@@ -19,3 +19,11 @@
   color: #979798;
   margin: 0;
 }
+
+.down {
+  display: block;
+}
+
+.up {
+  display: none;
+}
