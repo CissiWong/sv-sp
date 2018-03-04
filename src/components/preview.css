@@ -1,0 +1,21 @@
+.preview-container {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2px;
+}
+.preview-container a {
+  color: #1B1D1F;
+  padding: 5px 3px 5px 3px;
+  margin: 0;
+}
+
+.preview-container h4 {
+  color: #1B1D1F;
+  margin: 0;
+}
+
+.preview-container p {
+  color: #979798;
+  margin: 0;
+}

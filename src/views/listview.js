@@ -1,6 +1,5 @@
 import React from "react"
 import Preview from "../components/preview.js"
-import View from "../components/view.js"
 
 export default class ListView extends React.Component {
   constructor(props) {
@@ -21,7 +20,7 @@ export default class ListView extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="listview-container">
         {this.state.listings.map(item => {
             return <Preview
               key={item.id}

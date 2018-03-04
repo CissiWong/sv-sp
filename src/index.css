@@ -10,13 +10,21 @@ body {
 }
 
 a {
-
+  text-decoration: none;
+  font-size: 14px;
 }
+
  h1 {
    font-weight: 400;
    font-size: 28px;
  }
+
  p {
    font-weight: 400;
    font-size: 14px;
+   color: #979798;
+ }
+
+ h4 {
+
  }

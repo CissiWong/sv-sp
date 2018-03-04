@@ -11,16 +11,17 @@ nav img {
 }
 
 .user {
+  display: flex;
   position: relative;
   color: #fff;
   background-color: #A21019;
   z-index: 1;
   width: 25%;
   height: auto;
-  display: flex;
 }
 
 .user p {
+  color: #fff;
   position: absolute;
   top: 6px;
   right: 44px;
@@ -30,10 +31,25 @@ nav img {
 
 .user h4 {
   position: absolute;
-  top: -1px;
+  top: 19px;
   right: 24px;
   bottom: 10px;
   left: 135px;
+}
+
+.circle {
+  padding: 0 0 1px 5px;
+  z-index: 1;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  bottom: 10px;
+  left: 202px;
+  background-color: #EC0013;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 header {
@@ -47,9 +63,39 @@ header {
   margin: 10px auto 10px auto;
 }
 
+.text-wrapper {
+  width:70%;
+}
+
 .text {
-  flex-direction: column;
   color: #fff;
+  flex-direction: column;
   padding: 20px 20px 20px 40px;
-  max-width: 50%;
+  width: 70%;
+}
+.text p {
+  color: #fff;
+  margin: 5px;
+}
+
+.listing-container {
+  flex-grow: 1;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 30%;
+  background-color: #1B1D1E;
+}
+
+.listing-headline {
+  padding: 10px;
+  background-color: #fff;
+  margin: 0;
+}
+.listing-headline p, h4 {
+  margin: 0;
+}
+
+.listing-bkgrnd {
+  background-color: #E1E1E6;
+  padding: 10px;
 }
