@@ -1,0 +1,55 @@
+nav {
+  height: auto;
+  width: 100%;
+  background-color: #EC0013;
+  display: flex;
+}
+
+nav img {
+  max-width: 130px;
+  margin: auto;
+}
+
+.user {
+  position: relative;
+  color: #fff;
+  background-color: #A21019;
+  z-index: 1;
+  width: 25%;
+  height: auto;
+  display: flex;
+}
+
+.user p {
+  position: absolute;
+  top: 6px;
+  right: 44px;
+  bottom: 0;
+  left: 24px;
+}
+
+.user h4 {
+  position: absolute;
+  top: -1px;
+  right: 24px;
+  bottom: 10px;
+  left: 135px;
+}
+
+header {
+  max-width: 99%;
+  height: auto;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 10px auto 10px auto;
+}
+
+.text {
+  flex-direction: column;
+  color: #fff;
+  padding: 20px 20px 20px 40px;
+  max-width: 50%;
+}

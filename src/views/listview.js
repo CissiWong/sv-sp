@@ -2,10 +2,6 @@ import React from "react"
 import Preview from "../components/preview.js"
 import View from "../components/view.js"
 
-// //data dummy //
-// import data from "../data/data.json"
-
-
 export default class ListView extends React.Component {
   constructor(props) {
     super(props)
@@ -23,9 +19,7 @@ export default class ListView extends React.Component {
       })
     ))}
 
-
   render() {
-    console.log("getting id", this.state.listings)
     return (
       <div>
         {this.state.listings.map(item => {
