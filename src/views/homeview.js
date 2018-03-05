@@ -5,8 +5,7 @@ import "./homeview.css"
 
 // components & views //
 import ListView from "./listview.js"
-// import Button from "../components/button.js"
-
+import Footer from "../components/footer.js"
 
 // assets //
 import logo from "../assets/grasroten.svg"
@@ -41,11 +40,11 @@ export default class HomeView extends React.Component {
               <p>Poängen fördelas jämnt över föreningarna.</p>
             </div>
             <div className="listing-bkgrnd">
-              <ListView
-                opacity={this.handleOpacity}/>
+              <ListView />
             </div>
           </div>
         </header>
+        <Footer />
       </div>
     </div>
       )

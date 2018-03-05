@@ -28,6 +28,23 @@ input:active {
   transform: translateY(4px);
 }
 
+
+form .close {
+  display: none;
+}
+
+form .close + label {
+  background-image: url("../assets/close.svg");
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  left: 94%;
+  top: 15px;
+}
+
 button {
   width: 360px;
   height: 50px;
