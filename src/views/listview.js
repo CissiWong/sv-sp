@@ -1,6 +1,9 @@
 import React from "react"
 import Preview from "../components/preview.js"
 
+// styles //
+import "./listview.css"
+
 // import Button from "../components/button.js"
 import Form from "../components/form.js"
 
@@ -58,23 +61,28 @@ export default class ListView extends React.Component {
 
   render() {
     return (
-      <div className="listview-container">
-        {this.state.listings.filter((item, index) => (
-          index < 3)).map(item => {
-              return <Preview
-                key={item.id}
-                id={item.id}
-                longname={item.longname}
-                // city={item.location.city}
-                sport={item.subcategory}
-                supporters={item.supporters}
-                point={item.points}
-                remove={this.handleRemoveListing}
-              />})}
-        <button
-          onClick={this.handleClick}>Lägg till förening</button>
+      <div>
+        <div className="listview-container">
+          {this.state.listings.filter((item, index) => (
+            index < 3)).map(item => {
+                return <Preview
+                  key={item.id}
+                  id={item.id}
+                  longname={item.longname}
+                  // city={item.location.city}
+                  sport={item.subcategory}
+                  supporters={item.supporters}
+                  point={item.points}
+                  remove={this.handleRemoveListing}
+                />})}
+          </div>
+            <button
+              className="add-button"
+              onClick={this.handleClick}>Lägg till förening
+            </button>
           <div>{this.handleForm()}</div>
       </div>
+
     )
   }
 }

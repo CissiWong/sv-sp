@@ -3,7 +3,9 @@
   max-width: 400px;
   display: flex;
   flex-wrap: wrap;
-  margin: 2px;
+  margin: 0;
+  border-bottom: 2px solid #EDEDF2;
+  height: auto;
 }
 
 .preview-box {
@@ -34,18 +36,18 @@
 
 .preview-container a {
   color: #1B1D1F;
-  padding: 5px 3px 5px 3px;
+  padding: 6px;
   margin: 0;
 }
 
 .preview-container h4 {
-  padding: 5px 3px 5px 3px;
+  padding: 6px 3px 0 6px;
   color: #1B1D1F;
   margin: 0;
 }
 
 .preview-container p {
-  padding: 5px 3px 5px 3px;
+  padding: 3px 3px 3px 6px;
   color: #979798;
   margin: 0;
 }

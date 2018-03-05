@@ -1,0 +1,13 @@
+.add-button {
+  width: 360px;
+  height: 50px;
+  margin-top: 25%;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.listview-container {
+  height: auto;
+  border: solid 20px #E1E1E6;
+}
