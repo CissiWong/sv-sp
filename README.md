@@ -8,6 +8,10 @@ npm start
 Step 3 - View the app
 Visit localhost:3000
 
+Step 4 - API:call with https://github.com/typicode/json-server
+($ npm install -g json-server).
+To start json-server: $ json-server --watch db.json.
+
 
 
 
