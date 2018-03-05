@@ -27,18 +27,23 @@ export default class Preview extends React.Component {
   render() {
     return (
         <div className="preview-container">
-          <div className="preview-box">
+          <div className="preview-title">
             <h4>{this.props.longname}</h4>
+          </div>
+          <div className="preview-info">
             <p>{this.props.sport}</p>
-            <input
-              className="complete"
-              value={this.props.id}
-              type="checkbox"
-              onChange={this.handleCheck} />
+              <input
+                className="complete"
+                name="complete"
+                value={this.props.id}
+                id="complete"
+                type="checkbox"
+                onChange={this.handleCheck} />
+              <label htmlFor="complete"></label>
+            </div>
               <div className="dropdown">
                 <h3 onClick={this.handleClick}> > </h3>
               </div>
-          </div>
             <div className={this.state.down ? "down" : "up"}>
               <p>Poäng: {this.props.point}</p>
               <p>Supporters: {this.props.supporters}</p>
