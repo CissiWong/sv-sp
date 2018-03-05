@@ -59,18 +59,18 @@ export default class ListView extends React.Component {
   render() {
     return (
       <div className="listview-container">
-        {this.state.listings.map(item => {
-            return <Preview
-              key={item.id}
-              id={item.id}
-              longname={item.longname}
-              // city={item.location.city}
-              sport={item.subcategory}
-              supporters={item.supporters}
-              point={item.points}
-              remove={this.handleRemoveListing}
-            />
-        })}
+        {this.state.listings.filter((item, index) => (
+          index < 3)).map(item => {
+              return <Preview
+                key={item.id}
+                id={item.id}
+                longname={item.longname}
+                // city={item.location.city}
+                sport={item.subcategory}
+                supporters={item.supporters}
+                point={item.points}
+                remove={this.handleRemoveListing}
+              />})}
         <button
           onClick={this.handleClick}>Lägg till förening</button>
           <div>{this.handleForm()}</div>

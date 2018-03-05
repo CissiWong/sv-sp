@@ -27,6 +27,7 @@ export default class Preview extends React.Component {
   render() {
     return (
         <div className="preview-container">
+          <div className="preview-box">
             <h4>{this.props.longname}</h4>
             <p>{this.props.sport}</p>
             <input
@@ -34,10 +35,11 @@ export default class Preview extends React.Component {
               value={this.props.id}
               type="checkbox"
               onChange={this.handleCheck} />
-            <p
-              onClick={this.handleClick}> > </p>
-            <div
-              className={this.state.down ? "down" : "up"}>
+              <div className="dropdown">
+                <h3 onClick={this.handleClick}> > </h3>
+              </div>
+          </div>
+            <div className={this.state.down ? "down" : "up"}>
               <p>Poäng: {this.props.point}</p>
               <p>Supporters: {this.props.supporters}</p>
             </div>

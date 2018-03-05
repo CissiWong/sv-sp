@@ -54,7 +54,7 @@ nav img {
 
 header {
   max-width: 99%;
-  height: auto;
+  height: 500px;
   background-image: url("../assets/background.png");
   background-size: cover;
   background-position: center top;
@@ -82,7 +82,8 @@ header {
   flex-grow: 1;
   justify-content: space-around;
   padding: 20px;
-  max-width: 30%;
+  max-width: 400px;
+  max-height: 500px;
   background-color: #1B1D1E;
 }
 

@@ -1,9 +1,37 @@
 .preview-container {
   background-color: #fff;
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   margin: 2px;
 }
+
+.preview-box {
+  position: relative;
+  flex-direction: column;
+  width: 400px;
+}
+
+.dropdown {
+  background-color: #EDEDF2;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 270px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.dropdown h3 {
+  margin: 8px 10px 10px 15px;
+}
+
 .preview-container a {
   color: #1B1D1F;
   padding: 5px 3px 5px 3px;
@@ -11,17 +39,22 @@
 }
 
 .preview-container h4 {
+  padding: 5px 3px 5px 3px;
   color: #1B1D1F;
   margin: 0;
 }
 
 .preview-container p {
+  padding: 5px 3px 5px 3px;
   color: #979798;
   margin: 0;
 }
 
 .down {
+  max-width: 400px;
   display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .up {
