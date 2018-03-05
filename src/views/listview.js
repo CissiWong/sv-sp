@@ -1,11 +1,15 @@
 import React from "react"
 import Preview from "../components/preview.js"
 
+// import Button from "../components/button.js"
+import Form from "../components/form.js"
+
 export default class ListView extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      listings: []
+      listings: [],
+      formVisible: false
     }
   }
 
@@ -18,6 +22,38 @@ export default class ListView extends React.Component {
       })
     ))}
 
+     handleNewListing = (newName, newSport, newPostal, newArea, newAdress, newUrl) => {
+      const newListing =
+      { longname: newName,
+        subcategory: newSport,
+        zipcode: newPostal,
+        city: newArea,
+        address: newAdress,
+        homepage: newUrl
+      }
+        this.setState({
+        listings: [newListing, ...this.state.listings]
+      })
+    }
+
+    handleClick = () => {
+      this.setState({
+        formVisible: !this.state.formVisible
+        })
+      }
+
+
+    handleForm = () => {
+      if (this.state.formVisible) {
+        console.log("yes form")
+        return <Form onNewListing={this.handleNewListing} />
+      } else {
+        console.log("no form")
+        return null
+      }
+    }
+
+
   render() {
     return (
       <div className="listview-container">
@@ -26,12 +62,15 @@ export default class ListView extends React.Component {
               key={item.id}
               id={item.id}
               name={item.shortname}
-              location={item.location.city}
+              // city={item.location.city}
               sport={item.subcategory}
               supporters={item.supporters}
               point={item.points}
             />
         })}
+        <button
+          onClick={this.handleClick}>Lägg till förening</button>
+          <div>{this.handleForm()}</div>
       </div>
     )
   }

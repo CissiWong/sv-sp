@@ -5,7 +5,7 @@ import "./homeview.css"
 
 // components & views //
 import ListView from "./listview.js"
-import Button from "../components/button.js"
+// import Button from "../components/button.js"
 
 
 // assets //
@@ -40,7 +40,6 @@ export default class HomeView extends React.Component {
             </div>
             <div className="listing-bkgrnd">
               <ListView />
-              <Button />
             </div>
           </div>
         </header>

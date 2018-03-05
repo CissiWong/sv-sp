@@ -17,10 +17,11 @@ export default class Button extends React.Component {
       })
     }
 
+
   handleForm = () => {
     if (this.state.formVisible) {
       console.log("yes form")
-      return <Form />
+      return <Form handleNewListing={onNewListing}/>
     } else {
       console.log("no form")
       return null

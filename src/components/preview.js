@@ -25,7 +25,7 @@ export default class Preview extends React.Component {
     return (
         <div className="preview-container">
             <h4>{this.props.name}</h4>
-            <p>{this.props.location}, {this.props.sport}</p>
+            <p>{this.props.city}, {this.props.sport}</p>
             <p
               onClick={this.handleClick}> > </p>
             <div
