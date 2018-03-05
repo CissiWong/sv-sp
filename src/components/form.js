@@ -24,6 +24,10 @@ export default class Form extends React.Component {
     })
   }
 
+  handleClose = () => {
+    this.props.close(this.props.checked)
+  }
+
   handleSubmit = event => {
     event.preventDefault()
     this.props.onNewListing(this.state)
@@ -41,6 +45,13 @@ export default class Form extends React.Component {
    render() {
     return(
       <form>
+        <input
+          className="close"
+          name="close"
+          id="close"
+          type="checkbox"
+          onChange={this.handleClose} />
+        <label htmlFor="close"></label>
         <label>
           <input
             name="longname"

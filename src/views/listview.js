@@ -37,6 +37,12 @@ export default class ListView extends React.Component {
       })
     }
 
+    handleClose = () => {
+      this.setState({
+        formVisible: false
+      })
+    }
+
     handleRemoveListing = (id) => {
       const newListings = [...this.state.listings]
       newListings.splice(id, 1)
@@ -50,7 +56,8 @@ export default class ListView extends React.Component {
       if (this.state.formVisible) {
         return <Form
           onNewListing={this.handleNewListing}
-          remove={this.handleRemove} />
+          remove={this.handleRemove}
+          close={this.handleClose} />
         } else {
         return null
       }
