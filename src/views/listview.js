@@ -34,11 +34,21 @@ export default class ListView extends React.Component {
         })
       }
 
+    handleRemoveListing = (id) => {
+      const newListings = [...this.state.listings]
+      newListings.splice(id, 1)
+      this.setState({
+        listings: newListings
+      })
+    }
+
 
     handleForm = () => {
       if (this.state.formVisible) {
         console.log("yes form")
-        return <Form onNewListing={this.handleNewListing} />
+        return <Form
+          onNewListing={this.handleNewListing}
+          remove={this.handleRemove} />
       } else {
         console.log("no form")
         return null
@@ -58,6 +68,7 @@ export default class ListView extends React.Component {
               sport={item.subcategory}
               supporters={item.supporters}
               point={item.points}
+              remove={this.handleRemoveListing}
             />
         })}
         <button

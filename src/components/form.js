@@ -51,7 +51,7 @@ export default class Form extends React.Component {
             name="subcategory"
             type="text"
             placeholder="Sport"
-            value={this.state.sport}
+            value={this.state.subcategory}
             onChange={this.handleInputChange}/>
         </label>
         <label>
@@ -59,7 +59,7 @@ export default class Form extends React.Component {
             name="zipcode"
             type="number"
             placeholder="Postnummer"
-            value={this.state.postal}
+            value={this.state.zipcode}
             onChange={this.handleInputChange} />
         </label>
         <label>
@@ -67,7 +67,7 @@ export default class Form extends React.Component {
             name="city"
             type="text"
             placeholder="Ort"
-            value={this.state.area}
+            value={this.state.city}
             onChange={this.handleInputChange}/>
         </label>
         <label>
@@ -84,7 +84,7 @@ export default class Form extends React.Component {
             name="homepage"
             type="url"
             placeholder="Address till hemsida"
-            value={this.state.url}
+            value={this.state.homepage}
             onChange={this.handleInputChange} />
         </label>
         <button

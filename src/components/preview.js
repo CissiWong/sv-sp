@@ -20,18 +20,26 @@ export default class Preview extends React.Component {
     })
   }
 
+  handleCheck = () => {
+    this.props.remove(this.props.id)
+  }
 
   render() {
     return (
         <div className="preview-container">
             <h4>{this.props.longname}</h4>
-            <p>{this.props.city}, {this.props.sport}</p>
+            <p>{this.props.sport}</p>
+            <input
+              className="complete"
+              value={this.props.id}
+              type="checkbox"
+              onChange={this.handleCheck} />
             <p
               onClick={this.handleClick}> > </p>
             <div
               className={this.state.down ? "down" : "up"}>
-              <p>{this.props.point}</p>
-              <p>{this.props.supporters}</p>
+              <p>Poäng: {this.props.point}</p>
+              <p>Supporters: {this.props.supporters}</p>
             </div>
         </div>
     )
