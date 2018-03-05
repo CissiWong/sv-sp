@@ -8,6 +8,7 @@
 }
 
 .listview-container {
+  position: relative;
   height: auto;
   border: solid 20px #E1E1E6;
 }

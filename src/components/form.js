@@ -1,5 +1,8 @@
 import React from "react"
 
+// styles //
+import "./form.css"
+
 export default class Form extends React.Component {
 
   constructor(props) {

@@ -12,8 +12,10 @@ import ListView from "./listview.js"
 import logo from "../assets/grasroten.svg"
 
 export default class HomeView extends React.Component {
+
   render() {
     return (
+      <div>
       <div className="homeview-container">
         <nav>
             <img src={logo} alt="" />
@@ -39,11 +41,13 @@ export default class HomeView extends React.Component {
               <p>Poängen fördelas jämnt över föreningarna.</p>
             </div>
             <div className="listing-bkgrnd">
-              <ListView />
+              <ListView
+                opacity={this.handleOpacity}/>
             </div>
           </div>
         </header>
       </div>
+    </div>
       )
     }
   }

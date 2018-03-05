@@ -34,8 +34,8 @@ export default class ListView extends React.Component {
     handleClick = () => {
       this.setState({
         formVisible: !this.state.formVisible
-        })
-      }
+      })
+    }
 
     handleRemoveListing = (id) => {
       const newListings = [...this.state.listings]
@@ -48,12 +48,10 @@ export default class ListView extends React.Component {
 
     handleForm = () => {
       if (this.state.formVisible) {
-        console.log("yes form")
         return <Form
           onNewListing={this.handleNewListing}
           remove={this.handleRemove} />
-      } else {
-        console.log("no form")
+        } else {
         return null
       }
     }
