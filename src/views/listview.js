@@ -22,15 +22,7 @@ export default class ListView extends React.Component {
       })
     ))}
 
-     handleNewListing = (newName, newSport, newPostal, newArea, newAdress, newUrl) => {
-      const newListing =
-      { longname: newName,
-        subcategory: newSport,
-        zipcode: newPostal,
-        city: newArea,
-        address: newAdress,
-        homepage: newUrl
-      }
+     handleNewListing = (newListing) => {
         this.setState({
         listings: [newListing, ...this.state.listings]
       })
@@ -61,7 +53,7 @@ export default class ListView extends React.Component {
             return <Preview
               key={item.id}
               id={item.id}
-              name={item.shortname}
+              longname={item.longname}
               // city={item.location.city}
               sport={item.subcategory}
               supporters={item.supporters}

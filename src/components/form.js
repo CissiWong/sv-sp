@@ -5,7 +5,7 @@ export default class Form extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      longName: "",
+      longname: "",
       subcategory: "",
       zipcode: "",
       city: "",
@@ -43,7 +43,7 @@ export default class Form extends React.Component {
             name="longname"
             type="text"
             placeholder="Föreningsnamn"
-            value={this.state.listingName}
+            value={this.state.longname}
             onChange={this.handleInputChange} />
         </label>
         <label>
